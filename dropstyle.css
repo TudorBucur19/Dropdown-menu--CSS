@@ -1,0 +1,107 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(nybackgr.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-bottom: 10px;
+	
+	font-family: sans-serif;
+}
+
+.menubar {
+	background: rgba(0, 179, 45, 1);
+	text-align: center;
+}
+
+.menubar ul {
+	display: inline-flex;
+	list-style: none;
+	color: white;
+
+}
+
+.menubar ul li {
+	width: 120;
+	margin: 15px;
+	padding: 15px;
+}
+
+.menubar ul li a {
+	text-decoration: none;
+	color: white;
+}
+
+.active, .menubar ul li:hover {
+	border-radius: 3px;
+	background: #3ef744;
+}
+
+.menubar .fa {
+	margin-right: 8px;
+}
+
+.submenu1 {
+	display: none;
+}
+
+.menubar ul li:hover  .submenu1 {
+	display: block;
+	position: absolute;
+	background: rgba(0, 179, 45, 0.5);
+	margin-top: 15px;
+	margin-left: -15px;
+}
+
+.menubar ul li:hover  .submenu1 ul {
+	display: block;
+	margin: 10px;
+}
+
+.menubar ul li:hover  .submenu1 ul li {
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted white;
+	border-radius: 0;
+	background: transparent;
+	text-align: left;
+}
+
+.menubar ul li:hover  .submenu1 ul li:last-child {
+	border-bottom: none;
+}
+
+.menubar ul li:hover  .submenu1 ul li a:hover {
+	color: #3ef744;
+}
+
+.fa-angle-right {
+	float: right;
+}
+
+.submenu2 {
+	display: none;
+}
+
+.hover-me:hover .submenu2 {
+	display: block;
+	position: absolute;
+	background: rgba(0, 179, 45, 0.5);
+	margin-top: -40px;
+	margin-left: 140px;
+}
+
+
+
+
+
+
+
+
+
+
